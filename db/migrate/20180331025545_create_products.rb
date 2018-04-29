@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.string :description
       t.integer :inventory_key
 
+      t.string :front_model_image_url
       t.string :brand_logo_image
       t.string :thumbnail_image
       t.string :color_swatch_image
@@ -17,7 +18,8 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.integer :size_index
       t.string :weight
 
-      t.integer :price_id
+      t.string :color
+
       t.integer :brand_id
       t.integer :style_id
       t.integer :color_id
